@@ -103,7 +103,6 @@ main {
     border-radius: 0.5rem;
     box-shadow: var(--shadow-x) var(--shadow-y) 2rem var(--grey-200);
     z-index: 1;
-    background-color: white; /* Default color */
   }
 
   .profile {
@@ -126,7 +125,6 @@ main {
     color: var(--purple-50);
     background-color: var(--purple-500);
     .profile-picture { border-color: var(--purple-300); }
-    .title { color: white; }
   }
   .card-2 {
     background-color: var(--grey-500);
@@ -134,19 +132,20 @@ main {
   }
   .card-3 {
     color: var(--grey-400);
-    .profile-picture { border-color: white; }
+    .profile-picture { border-color: var(--grey-100); }
   }
   .card-4 {
     background-color: var(--dark-blue);
+    color: var(--grey-200);
     .profile-picture { border-color: var(--purple-500); }
   }
   .card-5 {
     color: var(--grey-400);
-    .profile-picture { border-color: white; }
+    .profile-picture { border-color: var(--grey-100); }
   }
 
   @media (min-width: 799px) {
-    --shadow-x: 0rem;
+    --shadow-x: 2rem;
     --shadow-y: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
