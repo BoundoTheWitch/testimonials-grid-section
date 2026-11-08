@@ -68,6 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Reset end */
 
+html,
+body {
+  height: 100dvh;
+}
+
 body {
   font-family: var(--fnt-primary);
   font-size: var(--fnt-size);
@@ -76,12 +81,18 @@ body {
   margin: 2rem;
 }
 
+main {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
 
 .cards {
   --padding: 2rem;
   --gap: 2rem;
   --shadow-x: 1rem;
   --shadow-y: 5rem;
+
   display: grid;
   gap: var(--gap);
 
@@ -90,8 +101,7 @@ body {
     gap: 1rem;
     padding: var(--padding);
     border-radius: 0.5rem;
-    /* filter: drop-shadow(1rem 2rem 0.813rem var(--grey-100)); */
-    box-shadow: var(--shadow-x) var(--shadow-y) 1.5rem var(--grey-200);
+    box-shadow: var(--shadow-x) var(--shadow-y) 2rem var(--grey-200);
     z-index: 1;
     background-color: white; /* Default color */
   }
@@ -135,8 +145,8 @@ body {
     .profile-picture { border-color: white; }
   }
 
-  @media (min-width: 376px) {
-    --shadow-x: 2rem;
+  @media (min-width: 799px) {
+    --shadow-x: 0rem;
     --shadow-y: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
