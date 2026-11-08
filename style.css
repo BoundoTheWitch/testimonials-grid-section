@@ -13,6 +13,8 @@
   --fnt-primary: Barlow Semi Condensed, sans-serif;
 
   --fnt-size: 0.813rem; /* 13px */
+  --fw-primary: 500;
+  --fw-secondary: 600;
 }
 
 /* CSS Reset by Josh W Comeau */
@@ -34,8 +36,7 @@
 }
 
 body {
-  /* 4. Increase line-height */
-  line-height: 1.5;
+
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
@@ -62,6 +63,69 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+  font-weight: var(--fw-secondary);
 }
 
 /* Reset end */
+
+body {
+  font-family: var(--fnt-primary);
+  font-size: var(--fnt-size);
+  font-weight: var(--fw-primary);
+  color: white;
+  margin: 2rem;
+}
+
+
+.cards {
+  --padding: 2rem;
+  --gap: 2rem;
+  display: grid;
+  gap: var(--gap);
+
+  .card {
+    display: grid;
+    gap: 1rem;
+    padding: var(--padding);
+    border-radius: 0.5rem;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profile-picture {
+    border-radius: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 2rem;
+    aspect-ratio: 1;
+    border-style: solid;
+    border-width: 2px;
+  }
+
+  .card-1 {
+    color: var(--purple-50);
+    background-color: var(--purple-500);
+    .profile-picture { border-color: var(--purple-300); }
+    .title { color: white; }
+  }
+  .card-2 {
+    background-color: var(--grey-500);
+    .profile-picture { border-color: var(--grey-500); }
+  }
+  .card-3 {
+    color: var(--grey-400);
+    .profile-picture { border-color: white; }
+  }
+  .card-4 {
+    background-color: var(--dark-blue);
+    .profile-picture { border-color: var(--purple-500); }
+  }
+  .card-5 {
+    color: var(--grey-400);
+    .profile-picture { border-color: white; }
+  }
+}
