@@ -88,6 +88,10 @@ body {
     gap: 1rem;
     padding: var(--padding);
     border-radius: 0.5rem;
+    /* filter: drop-shadow(1rem 2rem 0.813rem var(--grey-100)); */
+    box-shadow: 1rem 5rem 1.5rem var(--grey-200);
+    z-index: 1;
+    background-color: white; /* Default color */
   }
 
   .profile {
