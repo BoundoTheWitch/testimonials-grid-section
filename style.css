@@ -99,7 +99,7 @@ main {
   --gap: 2rem;
   --shadow-x: 1rem;
   --shadow-y: 0.813rem;
-  --shadow-color: black;
+  --pfp-border-color: none;
 
   display: grid;
   gap: var(--gap);
@@ -126,30 +126,28 @@ main {
     width: 2rem;
     aspect-ratio: 1;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.125rem;
+    border: 0.125rem solid var(--pfp-border-color);
   }
 
   .card-1 {
+    --pfp-border-color: var(--purple-50);
     color: var(--purple-50);
     background-color: var(--purple-500);
-    .profile-picture { border-color: var(--purple-300); }
   }
   .card-2 {
     background-color: var(--grey-500);
-    .profile-picture { border-color: var(--grey-500); }
   }
   .card-3 {
     color: var(--grey-400);
-    .profile-picture { border-color: var(--grey-100); }
   }
   .card-4 {
+    --pfp-border-color: var(--purple-500);
     background-color: var(--dark-blue);
     color: var(--grey-200);
-    .profile-picture { border-color: var(--purple-500); }
   }
   .card-5 {
     color: var(--grey-400);
-    .profile-picture { border-color: var(--grey-100); }
   }
 
   @media (min-width: 799px) {
