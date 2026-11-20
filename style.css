@@ -78,7 +78,7 @@ body {
   font-weight: var(--fw-primary);
   color: white;
   margin: 2rem;
-  background-color: var(--purple-50);
+  background-color: var(--grey-100);
 
   @media (min-width: 49.938rem) {
     margin: 0;
