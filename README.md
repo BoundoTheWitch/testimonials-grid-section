@@ -14,7 +14,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -33,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/boundothewitch/testimonials-grid-section-main)
-- Live Site URL: [TBD]()
+- Live Site URL: [Netlify](https://glistening-souffle-05a6dd.netlify.app/)
 
 ## My process
 
@@ -47,24 +46,17 @@ Users should be able to:
 
 ### What I learned
 
-Will update as I go along.
+More extensive use of CSS grids. Mainly using `span` when declaring which area an element stays in.
 
 ### Continued development
 
-Will update over time.
+In the future I plan to use grids more now that I have a better understanding how it works when creating unique layouts.
 
 ### Useful resources
 
-Will include at the end.
-
-### AI Collaboration
-
+[CSS Grid Garden](https://cssgridgarden.com/) - A gameified way to learn how to use CSS grids.
 
 ## Author
 
 - Website - [Ash Chapman](https://boundothewitch.github.io)
 - Frontend Mentor - [@BoundoTheWitch](https://www.frontendmentor.io/profile/boundothewitch)
-
-## Acknowledgments
-
-Will update over time.
