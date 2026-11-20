@@ -19,7 +19,7 @@
   --media-min-width: 799px;
 }
 
-/* CSS Reset by Josh W Comeau */
+/* CSS Reset by Josh W Comeau (modified) */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
