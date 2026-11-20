@@ -15,8 +15,6 @@
   --fnt-size: 0.813rem; /* 13px */
   --fw-primary: 500;
   --fw-secondary: 600;
-
-  --media-min-width: 799px;
 }
 
 /* CSS Reset by Josh W Comeau (modified) */
@@ -81,7 +79,7 @@ body {
   color: white;
   margin: 2rem;
 
-  @media (min-width: 799px) {
+  @media (min-width: 49.938rem) {
     margin: 0;
   }
 }
@@ -89,7 +87,7 @@ body {
 main {
   display: grid;
   place-items: center;
-  @media (min-width: 799px) {
+  @media (min-width: 49.938rem) {
     height: 100dvh;
   }
 }
@@ -125,8 +123,6 @@ main {
     overflow: hidden;
     width: 2rem;
     aspect-ratio: 1;
-    border-style: solid;
-    border-width: 0.125rem;
     border: 0.125rem solid var(--pfp-border-color);
   }
 
@@ -150,7 +146,7 @@ main {
     color: var(--grey-400);
   }
 
-  @media (min-width: 799px) {
+  @media (min-width: 49.938rem) {
     --shadow-x: 2rem;
     --shadow-y: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
